@@ -8,6 +8,11 @@ namespace ShootingDice
     {
         static void Main(string[] args)
         {
+
+            Console.WriteLine("What's your name?");
+            string inputName = Console.ReadLine();
+            Console.WriteLine("-------------------");
+
             Player player1 = new Player();
             player1.Name = "Bob";
 
@@ -29,6 +34,13 @@ namespace ShootingDice
             player3.Name = "Wilma";
 
             player3.Play(Chirper);
+
+            Console.WriteLine("-------------------");
+
+            HumanPlayer human = new HumanPlayer();
+            human.Name = inputName;
+
+            human.Play(player3);
 
             Console.WriteLine("-------------------");
 

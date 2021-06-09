@@ -39,8 +39,12 @@ namespace ShootingDice
 
             Console.WriteLine("-------------------");
 
+            OneHigherPlayer HighRoller = new OneHigherPlayer();
+            HighRoller.Name = "Richard (aka Dick)";
+
+            HighRoller.Play(Chirper);
             List<Player> players = new List<Player>() {
-                player1, player2, player3, large
+                player1, player2, player3, large, Chirper, HighRoller
             };
 
             PlayMany(players);

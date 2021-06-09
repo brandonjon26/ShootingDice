@@ -55,8 +55,18 @@ namespace ShootingDice
             HighRoller.Name = "Richard (aka Dick)";
 
             HighRoller.Play(Chirper);
+
+            Console.WriteLine("-------------------");
+
+            CreativeSmackTalkingPlayer Wayne = new CreativeSmackTalkingPlayer();
+            Wayne.Name = "Wayne";
+
+            Wayne.Play(Chirper);
+
+            Console.WriteLine("-------------------");
+
             List<Player> players = new List<Player>() {
-                player1, player2, player3, large, Chirper, HighRoller
+                player1, player2, player3, large, Chirper, HighRoller, Wayne
             };
 
             PlayMany(players);
